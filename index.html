@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="A chaotic but sweet Valentine page for Nayab and Hassaan." />
+  <title>Nayab x Hassaan | Valentine Chaos</title>
+  <link rel="icon" type="image/svg+xml" href='data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"%3E%3Ctext y="52" font-size="52"%3E%F0%9F%92%96%3C/text%3E%3C/svg%3E' />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#stage">Skip to content</a>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+
+  <div class="bg" aria-hidden="true">
+    <div class="grain"></div>
+    <div class="blob blob-a"></div>
+    <div class="blob blob-b"></div>
+  </div>
+
+  <main class="app" aria-live="polite">
+    <section class="card" id="stage" tabindex="-1" aria-label="Valentine story"></section>
+  </main>
+
+  <audio id="bgm" preload="none" loop></audio>
+
+  <div id="modal" class="modal" hidden>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalNote">
+      <div class="modal-top">
+        <h2 id="modalTitle" class="modal-title"></h2>
+        <button id="closeModal" class="btn" type="button">Close</button>
+      </div>
+      <div class="modal-body">
+        <img id="modalImg" alt="" loading="lazy" decoding="async" />
+        <p id="modalNote"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
