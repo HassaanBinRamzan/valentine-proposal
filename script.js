@@ -21,7 +21,7 @@
   },
   ask: {
     kicker: "Final boss question 💝",
-    title: "Will you be my Valentine? ❤️",
+    title: "Will you be my valentine MRs. Hassaan?",
     body: "Say yes and I unlock premium husband features. Say no and this button starts cardio.",
     yesText: "YES 💍",
     noText: "No 🙈",
