@@ -376,7 +376,9 @@ function makeParticle() {
 }
 
 function startConfetti(durationMs = 1600) {
-  confettiParticles = Array.from({ length: 180 }, () => makeParticle());
+  const isMobile = window.matchMedia("(max-width: 860px)").matches;
+  const count = isMobile ? 90 : 180;
+  confettiParticles = Array.from({ length: count }, () => makeParticle());
   confettiActive = true;
   const startedAt = performance.now();
 

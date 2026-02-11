@@ -219,6 +219,8 @@ body {
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
   gap: 12px;
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 1200px;
 }
 
 .photo {
@@ -244,6 +246,7 @@ body {
   height: 180px;
   object-fit: cover;
   display: block;
+  transform: translateZ(0);
 }
 
 .photo .cap {
@@ -318,8 +321,14 @@ body {
 }
 
 @media (max-width: 860px) {
+  .bg {
+    display: none;
+  }
+
   .card {
     padding: 18px;
+    backdrop-filter: none;
+    background: rgba(255, 255, 255, 0.92);
   }
 
   .photo {
